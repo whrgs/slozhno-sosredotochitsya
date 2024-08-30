@@ -37,8 +37,8 @@
   position: absolute;
 
   content: "";
-  inline-size: 25px;
-  block-size: 25px;
+  inline-size: 20px;
+  block-size: 20px;
 }
 
 .decorated-zone::before {
@@ -71,7 +71,10 @@
 .header__decor::after {
   position: absolute;
   inset-inline-end: -20px;
-  inset-block-start: 9px
+  inset-block-start: 9px;
+
+  display: block;
+  content: "";
 
   inline-size: 7px;
   block-size: 7px;
@@ -104,6 +107,9 @@
   text-transform: lowercase;
 
   background-color: transparent;
+
+  cursor: pointer;
+  appearance: none;
 }
 
 .header__theme-menu-button:hover {
@@ -134,7 +140,7 @@
   justify-self: end;
   align-self: center;
   max-block-size: 117px;
-  inline-size: 355px;
+  inline-size: 350px;
 }
 
 .title-decor {
@@ -155,7 +161,7 @@
 .section,
 .section__content {
   display: grid;
-  gap: 20px;
+  gap: 10px;
 }
 
 .section__title {
@@ -166,6 +172,10 @@
 
 .section__subtitle {
   font-size: 18px;
+}
+
+.section__caption {
+  font-weight: 400;
 }
 
 .section__paragraph {
@@ -198,13 +208,12 @@
 
 .footer {
   position: relative;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-block-size: 668px;
-  block-size: 100vb;
-  padding: var(--indent, 10px);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-block-size:668px;
+  block-size:100vb;
+  padding:var(--indent, 10px);
 }
 
 .footer__title {
@@ -214,7 +223,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
-  text-shadow: 2px 2px 0px var(--accent-color-logo);
+  text-shadow: 3px 3px 0px var(--accent-color-logo);
 }
 
 @media (width >=768px) {
@@ -229,7 +238,7 @@
   }
 
   .header__description {
-    inline-size: max(364px, 47.4vi);
+    inline-size: max(360px, 47.4vi);
   }
 
   .why,
@@ -246,6 +255,10 @@
   .section__pictures {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto min(192px, 26vi) min(230px, 31vi) min(318px, 42vi);
+  }
+
+  .section__pictures .section__subtitle {
+    grid-column-end: span 3;
   }
 
   .section__image {
@@ -276,7 +289,7 @@
   }
 
   .header__description {
-    inline-size: max(491px, 47.4vi);
+    inline-size: max(490px, 47.4vi);
   }
 
   .why,
