@@ -71,10 +71,7 @@
 .header__decor::after {
   position: absolute;
   inset-inline-end: -20px;
-  inset-block-start: 9px;
-
-  display: block;
-  content: "";
+  inset-block-start: 9px
 
   inline-size: 7px;
   block-size: 7px;
@@ -107,9 +104,6 @@
   text-transform: lowercase;
 
   background-color: transparent;
-
-  cursor: pointer;
-  appearance: none;
 }
 
 .header__theme-menu-button:hover {
@@ -172,10 +166,6 @@
 
 .section__subtitle {
   font-size: 18px;
-}
-
-.section__caption {
-  font-weight: 400;
 }
 
 .section__paragraph {
@@ -256,10 +246,6 @@
   .section__pictures {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto min(192px, 26vi) min(230px, 31vi) min(318px, 42vi);
-  }
-
-  .section__pictures .section__subtitle {
-    grid-column-end: span 3;
   }
 
   .section__image {
