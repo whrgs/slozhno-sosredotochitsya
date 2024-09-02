@@ -100,7 +100,6 @@
 
 .title-decor {
   color: currentColor;
-  color: var(--bg-color);
   font: inherit;
   font-weight: 700;
   background-color: var(--accent-color);
@@ -110,7 +109,6 @@
   color: currentColor;
   font: inherit;
   font-weight: 700;
-  color: var(--accent-color);
 }
 
 .header__theme-menu {
