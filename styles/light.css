@@ -20,18 +20,6 @@
   background-image: url(../images/cover-image-light.png);
 }
 
-.theme_light .header__decor {
-  display: none;
-}
-
-.theme_light .title-decor {
-  color: currentColor;
-}
-
-.theme_light .section__title {
-  color: currentColor;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     --header-title: #FFC2E6;
@@ -43,18 +31,6 @@
   }
 
   .page {
-    background-image: url(../images/cover-image-light.png);
-  }
-
-  .header__decor {
-    display: none;
-  }
-  
-  .title-decor {
-    color: currentColor;
-  }
-  
-  .section__title {
-    color: currentColor;
+    background-image: url(./images/cover-image-light.png);
   }
 }
