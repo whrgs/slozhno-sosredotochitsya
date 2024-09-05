@@ -135,6 +135,7 @@
 
   cursor: pointer;
   appearance: none;
+  border: none;
 }
 
 .header__theme-menu-button:focus-visible {
